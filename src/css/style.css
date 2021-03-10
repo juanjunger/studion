@@ -1,5 +1,5 @@
 /* Montserrat Font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,7 @@
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-yellow: #ffc500;
 
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -17,7 +18,7 @@
 /* General */
 body {
   margin: 0;
-  padding: 0;
+  padding: 7.75rem 0 0 0;
 }
 
 ul {
@@ -27,20 +28,17 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-right: 0.625rem;
-}
-
 /* Navigation */
 .navbar {
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1fr 9fr;
   position: fixed;
   top: 0;
   left: 0;
   align-items: center;
   width: 100vw;
-  padding: 1rem;
+  height: 7.75rem;
+  padding: 0 1rem;
   background-color: var(--color-black);
   color: var(--color-white);
 }
@@ -49,7 +47,35 @@ li {
   justify-self: end;
 }
 
+.navbar .navbar__links li {
+  margin-right: 3rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
 .navbar .navbar__links a {
+  font-weight: 300;
   color: var(--color-white);
   text-decoration: none;
+}
+
+.navbar .navbar__links a:hover {
+  color: var(--color-yellow);
+}
+
+.logo-studion {
+  font-size: 2.375rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1ch;
+}
+
+.logo-studion__subtitle {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.copy--primary {
+  color: var(--color-yellow);
 }

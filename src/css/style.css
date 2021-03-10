@@ -3,29 +3,30 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Root Variables */
 :root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
   --color-black: #000000;
   --color-white: #ffffff;
   --color-yellow: #ffc500;
 
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  --default-padding: 1rem;
 }
 
 /* General */
 body {
-  margin: 0;
   padding: 7.75rem 0 0 0;
 }
 
 ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 /* Navigation */
@@ -78,4 +79,15 @@ ul {
 
 .copy--primary {
   color: var(--color-yellow);
+}
+
+#slider {
+  height: calc(100vh - 7.75rem);
+  padding: var(--default-padding);
+  background-color: var(--color-black);
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
 }

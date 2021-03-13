@@ -30,6 +30,12 @@ ul {
   padding: 0;
 }
 
+header,
+main,
+footer {
+  overflow-x: hidden;
+}
+
 /* Navigation */
 .navbar {
   display: grid;
@@ -142,9 +148,31 @@ ul {
   font-size: 6.25rem;
   line-height: 6.25rem;
   text-transform: uppercase;
-  margin: 30px 0;
+  margin: 30px 0 60px;
 }
 
 .slide__copy h2 span {
+  display: block;
+}
+
+#counter {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.counter__container {
+  padding: 4.375rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+}
+
+.counter__container h3 {
+  font-size: 2.1875rem;
+}
+
+.counter__container h3 small {
+  font-size: 1.25rem;
   display: block;
 }

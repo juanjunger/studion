@@ -1,5 +1,5 @@
-/* Montserrat Font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,9 +12,12 @@
 
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-gray: #333333;
   --color-yellow: #ffc500;
 
   --default-padding: 1rem;
+
+  color: var(--color-gray);
 }
 
 /* General */
@@ -36,20 +39,65 @@ footer {
   overflow-x: hidden;
 }
 
+/* Default */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.copy--primary {
+  color: var(--color-yellow);
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  color: var(--color-yellow);
+  border: 0.125rem solid var(--color-white);
+  border-radius: 5rem;
+  background: transparent;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn--institutional {
+  border-color: var(--color-yellow);
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
+.btn--institutional:hover,
+.btn--institutional:active,
+.btn--institutional:focus {
+  border-color: var(--color-yellow);
+  background-color: var(--color-white);
+  color: var(--color-gray);
+}
+
 /* Navigation */
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 9fr;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
+  width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.navbar__container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
   align-items: center;
+
   width: 100vw;
   height: 7.75rem;
   padding: 0 1rem;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  z-index: 1;
 }
 
 .navbar .navbar__links {
@@ -84,32 +132,6 @@ footer {
 .logo-studion__subtitle {
   font-weight: 300;
   font-size: 0.875rem;
-}
-
-/* Default */
-.copy--primary {
-  color: var(--color-yellow);
-}
-
-.btn {
-  padding: 1rem 2.5rem;
-  color: var(--color-yellow);
-  border: 0.125rem solid var(--color-white);
-  border-radius: 5rem;
-  background: transparent;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.5s all ease;
-}
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-  border-color: var(--color-yellow);
-  background-color: var(--color-yellow);
-  color: var(--color-white);
 }
 
 /* Slider */
@@ -155,6 +177,7 @@ footer {
   display: block;
 }
 
+/* Counter */
 #counter {
   background-color: var(--color-yellow);
   color: var(--color-white);
@@ -175,4 +198,41 @@ footer {
 .counter__container h3 small {
   font-size: 1.25rem;
   display: block;
+}
+
+/* Institutional */
+.institutional {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.125rem;
+  align-items: center;
+  padding: 4.375rem;
+}
+
+.institutional__copy {
+  padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.institutional__copy h4 {
+  font-size: 1.5625rem;
+  margin-top: 1rem;
+}
+
+.institutional p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+  margin-bottom: 2.5rem;
+}
+
+.institutional__image {
+  max-width: 520px;
 }

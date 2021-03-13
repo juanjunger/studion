@@ -3,8 +3,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* Root Variables */
@@ -22,11 +20,14 @@
 /* General */
 body {
   padding: 7.75rem 0 0 0;
+  margin: 0;
 }
 
 ul {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation */
@@ -42,6 +43,7 @@ ul {
   padding: 0 1rem;
   background-color: var(--color-black);
   color: var(--color-white);
+  z-index: 1;
 }
 
 .navbar .navbar__links {
@@ -64,6 +66,7 @@ ul {
   color: var(--color-yellow);
 }
 
+/* Logo */
 .logo-studion {
   font-size: 2.375rem;
   font-weight: 900;
@@ -77,17 +80,71 @@ ul {
   font-size: 0.875rem;
 }
 
+/* Default */
 .copy--primary {
   color: var(--color-yellow);
 }
 
-#slider {
-  height: calc(100vh - 7.75rem);
-  padding: var(--default-padding);
-  background-color: var(--color-black);
-  background-image: url("../images/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.btn {
+  padding: 1rem 2.5rem;
+  color: var(--color-yellow);
+  border: 0.125rem solid var(--color-white);
+  border-radius: 5rem;
+  background: transparent;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  border-color: var(--color-yellow);
+  background-color: var(--color-yellow);
   color: var(--color-white);
+}
+
+/* Slider */
+#slider {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.slide {
+  height: calc(100vh - 7.75rem);
+  position: relative;
+}
+
+.slide__background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide__copy {
+  position: absolute;
+  top: 6.25rem;
+  left: 50vw;
+}
+
+.slide__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+  margin-top: 0;
+}
+
+.slide__copy h2 {
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.slide__copy h2 span {
+  display: block;
 }

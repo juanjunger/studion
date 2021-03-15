@@ -79,6 +79,12 @@ footer {
   color: var(--color-gray);
 }
 
+.btn--quote {
+  color: var(--color-gray);
+  border-color: var(--color-gray);
+  background-color: transparent;
+}
+
 /* Navigation */
 .navbar {
   position: fixed;
@@ -154,7 +160,7 @@ footer {
 
 .slide__copy {
   position: absolute;
-  top: 6.25rem;
+  top: 25vh;
   left: 50vw;
 }
 
@@ -235,4 +241,47 @@ footer {
 
 .institutional__image {
   max-width: 520px;
+}
+
+/* Quote */
+.quote {
+  background-image: url("../images/parallax.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+
+.quote__copy {
+  background-color: var(--color-white);
+  padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+  max-width: 53ch;
+  margin: 0;
+}
+
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: -0.1875rem;
+  text-transform: uppercase;
+  margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+  display: block;
 }

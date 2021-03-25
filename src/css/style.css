@@ -136,6 +136,7 @@ footer {
 }
 
 .logo-studion__subtitle {
+  display: block;
   font-weight: 300;
   font-size: 0.875rem;
 }
@@ -284,4 +285,29 @@ footer {
 
 .quote__copy h2 span {
   display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+}
+
+.footer__form {
+  justify-self: center;
+}
+
+.footer__social {
+  justify-self: end;
 }

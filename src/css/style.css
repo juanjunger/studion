@@ -297,15 +297,38 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
-  padding: 0 1rem;
+  padding: 5.25rem 1rem 3.75rem;
 }
 
 .footer .logo-studion {
   justify-self: start;
+  margin: 0;
 }
 
 .footer__form {
-  justify-self: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 9ch auto;
+  gap: 1.25rem;
+}
+
+.footer__form label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer__form fieldset {
+  border: unset;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer__form input {
+  width: 100%;
+  background-color: var(--color-yellow);
+  border: unset;
 }
 
 .footer__social {

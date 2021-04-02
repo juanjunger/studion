@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/juanjunger/studion.git"
   },
-  "keywords": ["HTML", "CSS", "Javascript"],
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
   "author": "juanjunger",
   "license": "ISC",
   "bugs": {

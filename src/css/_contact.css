@@ -78,3 +78,8 @@
 .contact__form__container {
   width: 540px;
 }
+
+.maps,
+.maps iframe {
+  height: 36.5rem;
+}

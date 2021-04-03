@@ -73,26 +73,29 @@
     <main>
       <section class="contact">
         <div class="contact__info">
-          <h3>Liga pra gente</h3>
-          <span>
-            <i class="fas fa-phone fa-flip-horizontal"></i>
-            +55 48 3223 - 5769
-          </span>
-          <span>
-            <i class="fab fa-whatsapp"></i>
-            +55 48 99943 - 7777
-          </span>
-          <h3>Venha conhecer a nossa casa</h3>
-          <span>
-            <i class="fas fa-map-marker-alt"></i>
-            Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
-          </span>
+          <div class="contact__info__container">
+            <h3>Liga pra gente</h3>
+            <span>
+              <i class="fas fa-phone fa-flip-horizontal"></i>
+              +55 48 3223 - 5769
+            </span>
+            <span>
+              <i class="fab fa-whatsapp"></i>
+              +55 48 99943 - 7777
+            </span>
+            <h3>Venha conhecer a nossa casa</h3>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+            </span>
+          </div>
+          <!-- .contact__info__container -->
         </div>
         <!-- .contact__info -->
 
         <div class="contact__form">
-          <h3>Deixe sua mensagem</h3>
-          <form>
+          <form class="contact__form__container">
+            <h3>Deixe sua mensagem</h3>
             <label for="name">Seu nome</label>
             <input type="text" name="name" id="name" />
             <label for="email">Seu email</label>
@@ -101,6 +104,7 @@
             <input type="text" name="message" id="message" />
             <button class="btn btn--contact" type="submit">Enviar</button>
           </form>
+          <!-- .contact__form__container -->
         </div>
         <!-- .contact__form -->
       </section>

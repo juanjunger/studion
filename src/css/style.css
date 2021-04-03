@@ -4,9 +4,13 @@
 @import "./_variables.css";
 @import "./_base.css";
 @import "./_utils.css";
-@import "./_navbar.css";
-@import "./_footer.css";
 @import "./_btn.css";
 
+/* Components */
+@import "./_navbar.css";
+@import "./_footer.css";
+@import "./_hero.css";
+
+/* Pages */
 @import "./_home.css";
 @import "./_contact.css";

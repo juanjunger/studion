@@ -37,7 +37,7 @@
             <a href="#depoimentos">Depoimentos</a>
           </li>
           <li>
-            <a href="contact.html">Contatos</a>
+            <a class="active" href="contact.html">Contatos</a>
           </li>
         </ul>
       </div>
@@ -45,90 +45,69 @@
     <!-- .navbar -->
 
     <header>
-      <div id="slider">
-        <div class="slide">
-          <img
-            class="slide__background-image"
-            src="./images/banner.jpg"
-            alt="Studion Banner"
-          />
-          <div class="slide__copy">
-            <h6>
-              <span class="copy--primary">Próximo Evento</span> - 25 de Setembro
-              às 19h
-            </h6>
-            <h2><span class="copy--primary">Creative</span> Minds</h2>
-            <button class="btn btn--slide">Saiba Mais</button>
+      <div class="hero">
+        <img
+          src="./images/contact.jpg"
+          alt="Contact Banner"
+          class="hero__background-image"
+        />
+        <!-- .hero__background-image -->
+        <div class="container hero__container">
+          <div class="hero__copy">
+            <h2>.contact</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum blanditiis laborum quibusdam autem aliquam ipsa
+              dolores, quaerat molestias quo tenetur placeat nisi? Fugit
+              inventore ratione perspiciatis ipsum sequi, quaerat sit!
+            </p>
           </div>
+          <!-- .hero__copy -->
         </div>
-        <!-- .slide -->
+        <!-- .hero__container -->
       </div>
-      <!-- .slider -->
+      <!-- .hero -->
     </header>
     <!-- header -->
 
     <main>
-      <section id="counter">
-        <ul class="container counter__container">
-          <li>
-            <h3>
-              + de 500
-              <small>eventos realizados</small>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              + de 1.000.000
-              <small>de ingressos vendidos</small>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              + 3000
-              <small>empresas atendidas</small>
-            </h3>
-          </li>
-        </ul>
-        <!-- .counter__container -->
-      </section>
-      <!-- .counter -->
-
-      <section class="container institutional">
-        <img
-          class="institutional__image"
-          src="./images/institutional.jpg"
-          alt="Studion Institutional"
-        />
-        <div class="institutional__copy">
-          <h6>Fazemos o seu evento acontecer</h6>
-          <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-            veniam amet autem alias fugiat, labore laborum ex soluta dolores
-            quidem vel dolorem facilis enim tempora doloremque exercitationem
-            omnis reprehenderit velit.
-          </p>
-          <button class="btn btn--institutional">Saiba Mais</button>
+      <section class="contact">
+        <div class="contact__info">
+          <h3>Liga pra gente</h3>
+          <span>
+            <i class="fas fa-phone fa-flip-horizontal"></i>
+            +55 48 3223 - 5769
+          </span>
+          <span>
+            <i class="fab fa-whatsapp"></i>
+            +55 48 99943 - 7777
+          </span>
+          <h3>Venha conhecer a nossa casa</h3>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+          </span>
         </div>
-        <!-- .institutional__copy -->
-      </section>
-      <!-- .institutional -->
+        <!-- .contact__info -->
 
-      <section class="quote">
-        <div class="container quote__container">
-          <div class="quote__copy">
-            <h6>
-              Você informa a temática e nós planejamos um evento com tecnologia
-              e
-            </h6>
-            <h2><span class="copy--primary">Muito+ </span>Diversão</h2>
-            <button class="btn btn--quote">Fazer cotação</button>
-          </div>
-          <!-- .quote__copy -->
+        <div class="contact__form">
+          <h3>Deixe sua mensagem</h3>
+          <form>
+            <label for="name">Seu nome</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Seu email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Sua mensagem</label>
+            <input type="text" name="message" id="message" />
+            <button class="btn btn--contact" type="submit">Enviar</button>
+          </form>
         </div>
-        <!-- .quote__container -->
+        <!-- .contact__form -->
       </section>
-      <!-- .quote -->
+      <!-- .contact -->
+
+      <section class="maps"></section>
+      <!-- .maps -->
     </main>
     <!-- main -->
 

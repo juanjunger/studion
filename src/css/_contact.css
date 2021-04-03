@@ -1,0 +1,85 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact h3 {
+  margin: 0 0 1.875rem;
+  font-size: 1.5625rem;
+}
+
+.contact__info h3:nth-of-type(2) {
+  margin-top: 3.75rem;
+}
+
+.contact__info i {
+  color: var(--color-yellow);
+  font-size: 1.5rem;
+}
+
+.contact__info span {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 0.625rem;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 1.6875rem;
+}
+
+.contact__form {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.contact__form label,
+.contact__form input {
+  display: block;
+}
+
+.contact__form label {
+  font-weight: 700;
+}
+
+.contact__form input {
+  background: unset;
+  border: unset;
+  border-bottom: 0.06rem solid #fff;
+  width: 100%;
+  color: var(--color-white);
+  margin-bottom: 1.875rem;
+  padding: 1rem 0.5rem;
+}
+
+.contact__form input:hover,
+.contact__form input:focus {
+  outline: unset;
+}
+
+.contact__form button {
+  float: right;
+}
+
+.contact__info,
+.contact__form {
+  padding: 4rem 0;
+}
+
+.contact__form__container {
+  padding-left: 7.125rem;
+}
+
+.contact__info__container {
+  float: right;
+  padding-right: 7.125rem;
+}
+
+.contact__info__container,
+.contact__form__container {
+  width: 540px;
+}
+
+.maps,
+.maps iframe {
+  height: 36.5rem;
+}

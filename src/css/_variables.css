@@ -1,0 +1,9 @@
+/* Root Variables */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #333333;
+  --color-gray-light: #cccccc;
+  --color-yellow: #ffc500;
+  --default-padding: 1rem;
+}

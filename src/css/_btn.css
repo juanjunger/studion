@@ -1,0 +1,40 @@
+.btn {
+  padding: 1rem 2.5rem;
+  color: var(--color-yellow);
+  border: 0.125rem solid var(--color-white);
+  border-radius: 5rem;
+  background: transparent;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn--institutional,
+.btn--contact {
+  border-color: var(--color-yellow);
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
+.btn--institutional:hover,
+.btn--institutional:active,
+.btn--institutional:focus,
+.btn--contact:hover,
+.btn--contact:active,
+.btn--contact:focus {
+  border-color: var(--color-yellow);
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  box-shadow: 0 1rem 1rem #0006;
+}
+
+.btn--quote {
+  color: var(--color-gray);
+  border-color: var(--color-gray);
+  background-color: transparent;
+}

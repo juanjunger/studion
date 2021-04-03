@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Title -->
+    <title>Studion</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <h1 class="logo-studion">
+          <a href="index.html">
+            Studi<span class="copy--primary">on </span>
+            <span class="logo-studion__subtitle">Eventos</span>
+          </a>
+        </h1>
+        <ul class="navbar__links">
+          <li>
+            <a href="#empresa">Empresa</a>
+          </li>
+          <li>
+            <a href="#eventos">Eventos</a>
+          </li>
+          <li>
+            <a href="#galeria">Galeria</a>
+          </li>
+          <li>
+            <a href="#depoimentos">Depoimentos</a>
+          </li>
+          <li>
+            <a class="active" href="contact.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- .navbar -->
+
+    <header>
+      <div class="hero">
+        <img
+          src="./images/contact.jpg"
+          alt="Contact Banner"
+          class="hero__background-image"
+        />
+        <!-- .hero__background-image -->
+        <div class="container hero__container">
+          <div class="hero__copy">
+            <h2>.contato</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum blanditiis laborum quibusdam autem aliquam ipsa
+              dolores, quaerat molestias quo tenetur placeat nisi? Fugit
+              inventore ratione perspiciatis ipsum sequi, quaerat sit!
+            </p>
+          </div>
+          <!-- .hero__copy -->
+        </div>
+        <!-- .hero__container -->
+      </div>
+      <!-- .hero -->
+    </header>
+    <!-- header -->
+
+    <main>
+      <section class="contact">
+        <div class="contact__info">
+          <div class="contact__info__container">
+            <h3>Liga pra gente</h3>
+            <span>
+              <i class="fas fa-phone fa-flip-horizontal"></i>
+              +55 48 3223 - 5769
+            </span>
+            <span>
+              <i class="fab fa-whatsapp"></i>
+              +55 48 99943 - 7777
+            </span>
+            <h3>Venha conhecer a nossa casa</h3>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+            </span>
+          </div>
+          <!-- .contact__info__container -->
+        </div>
+        <!-- .contact__info -->
+
+        <div class="contact__form">
+          <form class="contact__form__container">
+            <h3>Deixe sua mensagem</h3>
+            <label for="name">Seu nome</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Seu email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Sua mensagem</label>
+            <input type="text" name="message" id="message" />
+            <button class="btn btn--contact" type="submit">Enviar</button>
+          </form>
+          <!-- .contact__form__container -->
+        </div>
+        <!-- .contact__form -->
+      </section>
+      <!-- .contact -->
+
+      <section class="maps">
+        <iframe
+          width="100%"
+          src="https://maps.google.com/maps?q=Rua%20Miguel%20Daux,%20129%20-%20Coqueiros%20Florian%C3%B3polis%20/%20SC&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        >
+        </iframe>
+      </section>
+      <!-- .maps -->
+    </main>
+    <!-- main -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <h2 class="logo-studion">
+          Studi<span class="copy--primary">on</span>
+          <span class="logo-studion__subtitle">Eventos</span>
+        </h2>
+        <!-- .logo-studion -->
+
+        <form class="footer__form">
+          <label for="news">receba news e promoções</label>
+          <fieldset class="footer__form__email">
+            <input id="news" type="email" placeholder="Email" />
+            <button type="submit">
+              <i class="fas fa-paper-plane fa-2x"></i>
+            </button>
+          </fieldset>
+        </form>
+        <!-- .footer__form -->
+
+        <ul class="footer__social">
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="far fa-play-circle fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- .footer__social -->
+      </div>
+      <!-- .footer__container -->
+      <p>
+        <small>
+          Studi<span class="copy--primary">ON</span> - Todos os direitos
+          reservados.
+        </small>
+      </p>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
